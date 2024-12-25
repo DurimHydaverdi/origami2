@@ -1,0 +1,65 @@
+.dribble-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #2b2b2b;
+    margin-top: 100px;
+
+    .dribble-image {
+        flex: 1;
+        img {
+            width: 528.472px;
+            height: 591.719px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+
+    .dribble-content {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -500px;
+
+        .dribble-text-box {
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: left;
+            width: 50%;
+
+            .dribble-title {
+                font-size: 3rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+                color: white;
+            }
+
+            .dribble-text {
+                font-size: 1.2rem;
+                color: white;
+                line-height: 1.6;
+                margin-bottom: 1rem;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .dribble-section {
+        flex-direction: column;
+
+        .dribble-image,
+        .dribble-content {
+            flex: unset;
+            width: 100%;
+        }
+
+        .dribble-text-box {
+            width: 100%;
+        }
+    }
+}

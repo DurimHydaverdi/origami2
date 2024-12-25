@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.scss';
-import video from '../assets/highlight.mp4'
+// import video from '../assets/highlight.mp4'
+import video1 from '../assets/highlight_1.mp4'
 import DribbleSection from '../DribbleSection/DribbleSection';
 import WhatWeOffer from '../WhatWeOffer/WhatWeOffer';
 import Testimony from '../Testimony/Testimony';
@@ -12,7 +13,7 @@ const Hero = () => {
         <div className="homepage">
             <header className="hero">
                     <video autoPlay loop muted className=''>
-                        <source src={video} type="video/mp4" />
+                        <source src={video1} type="video/mp4" />
                             Your browser does not support the video tag.
                     </video>
                 <div className="hero-text">

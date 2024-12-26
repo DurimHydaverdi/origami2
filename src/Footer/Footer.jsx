@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
           <div className="footer-section">
             <h3>EMAIL ADDRESS</h3>
-            <p>origami@gmail.com</p>
+            <p>origami.entt@gmail.com</p>
           </div>
           <div className="footer-section">
             <h3>PHONE NUMBER</h3>

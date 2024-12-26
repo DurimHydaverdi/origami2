@@ -1,72 +1,51 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
 import './Header.scss';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
-const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);  // State to track if the menu is open
+function Header() {
+  const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const navigate = useNavigate();  // React Router's useNavigate hook for programmatic navigation
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleLinkClick = () => {
+    // Scroll to top on any menu link click
+    window.scrollTo(0, 0);  // This will scroll the page to the top
+    setIsOpen(false);  // Close the menu after clicking a link
+  };
 
   useEffect(() => {
     const handleScroll = () => {
-      const offset = window.scrollY;
-      if (offset > 320) {
-        setIsScrolled(true);  // Add 'scrolled' class if scrolled down
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 0); // Change header style on scroll
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);  // Cleanup on component unmount
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);  // Toggle the state between open and close for the menu
-    document.body.classList.toggle('menu-open', !isOpen);  // Disable page scroll when menu is open
-  };
-
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });  // Scroll to the section smoothly
-    }
-    setIsOpen(false);  // Close the menu after scrolling to the section
-  };
-
-  const handleNavigate = (id) => {
-    if (window.location.pathname === '/') {
-      scrollToSection(id);  // If we're on the homepage, scroll to a section
-    } else {
-      navigate('/', { state: { scrollToId: id } });  // Navigate to the home page and pass state to scroll to section
-    }
-    setIsOpen(false);  // Close the menu after navigating
-  };
-
   return (
-    <>
-      <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
-        <Link to="/"><img className="logo_img" src={logo} alt="origami" /></Link>
-        <div className={`nav-toggle ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
-      </header>
-
-      {/* Fullscreen overlay menu */}
-      <nav className={`fullscreen-menu ${isOpen ? 'open' : ''}`}>
-        <ul>
-          {/* Navigate to Home Page */}
-          <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
-          <li><Link to="clients"><a onClick={() => handleNavigate('clients')}>Clients</a></Link></li>
-          <li><Link to="/contact-us"><a onClick={() => handleNavigate('contact')}>About</a></Link></li>
-
-        </ul>
+    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+      <div className="header-logo">
+        <Link to="/" onClick={handleLinkClick}>
+          <img src={logo} alt="Logo" />
+        </Link>
+      </div>
+      <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav className={`header-nav ${isOpen ? 'active' : ''}`}>
+        <Link to="/" onClick={handleLinkClick}>Home</Link>
+        <Link to="/clients" onClick={handleLinkClick}>Clients</Link>
+        <Link to="/contact-us" onClick={handleLinkClick}>Contact</Link>
       </nav>
-    </>
+      {isOpen && <div className="overlay" onClick={() => setIsOpen(false)}></div>}
+    </header>
   );
-};
+}
 
 export default Header;

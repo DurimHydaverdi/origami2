@@ -19,7 +19,7 @@ const players = [
 const ClientsLandingPage = () => {
   return (
     <div>
-      <h1 className='clients'>Clients</h1>
+      <h1 className='clients-lp'>Clients</h1>
       <section className="players">
                 {players.map((player) => (
                     <div key={player.id} className="player-card">

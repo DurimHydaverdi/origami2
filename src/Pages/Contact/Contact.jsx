@@ -12,11 +12,11 @@ const Contact = () => {
         <div className="contact-info">
           <div>
             <p>Phone</p>
-            <h5>(123) 456-7890</h5>
+            <a href="tel:+38344838632"><h5>+38344838632</h5></a>
           </div>
           <div>
             <p>Email</p>
-            <h5>hello@reallygreatsite.com</h5>
+            <a href="mailto:origami.entt@gmail.com"><h5>origami.entt@gmail.com</h5></a>
           </div>
           <div>
             <p>Social</p>

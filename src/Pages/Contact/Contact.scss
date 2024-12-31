@@ -2,82 +2,82 @@ $font-color: white;
 $highlight-color: #f90;
 
 .contact {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-  
-    &-details {
-      flex: 1;
-  
-      h2 {
-        font-size: 50px;
-        margin-bottom: 1rem;
-        color: #f90;
-      }
-  
-      h5 {
-        color: $highlight-color;
-      }
-  
-      p {
-        font-size: 1rem;
-        margin-bottom: 2rem;
-        color: $font-color;
-      }
-  
-      &-info {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-  
-        div {
-          text-align: center; // Center-align text and icons
-  
-          p {
-            font-size: 1rem;
-            color: $font-color;
-          }
-        }
-      }
-  
-      .social-icons {
-        display: flex;
-        justify-content: center; // Center-align icons horizontally
-        gap: 1rem;
-        margin-top: 0.5rem;
-  
-        svg {
-          font-size: 1.5rem;
-          color: $highlight-color;
-          cursor: pointer;
-  
-          &:hover {
-            color: darken($highlight-color, 10%);
-          }
-        }
-      }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+
+  &-details {
+    flex: 1;
+
+    h2 {
+      font-size: 50px;
+      margin-bottom: 1rem;
+      color: #f90;
     }
-  
-    &-image {
-      flex: 1;
-  
-      img {
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-        object-fit: cover;
-        border-radius: 5px;
-      }
+
+    h5 {
+      color: #f90;  // Set the color for h5 text
+      text-decoration: inherit;
     }
-  
-    @media (max-width: 768px) {
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      color: $font-color;
+    }
+
+    &-info {
+      display: flex;
       flex-direction: column;
-      text-align: center;
-  
-      &-image {
-        margin-top: 1.5rem;
+      gap: 1rem;
+
+      div {
+        text-align: center; // Center-align text and icons
+
+        p {
+          font-size: 1rem;
+          color: $font-color;
+        }
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center; // Center-align icons horizontally
+      gap: 1rem;
+      margin-top: 0.5rem;
+
+      svg {
+        font-size: 1.5rem;
+        color: $highlight-color;
+        cursor: pointer;
+
+        &:hover {
+          color: darken($highlight-color, 10%);
+        }
       }
     }
   }
-  
+
+  &-image {
+    flex: 1;
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+
+    &-image {
+      margin-top: 1.5rem;
+    }
+  }
+}

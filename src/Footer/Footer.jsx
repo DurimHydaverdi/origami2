@@ -11,21 +11,21 @@ const Footer = () => {
           <div className="footer-section">
             <h3>SOCIAL MEDIA</h3>
             <div className="social-icons">
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/argjend-zeqiri-ba6756200/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/origamientt" target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
               </a>
             </div>
           </div>
           <div className="footer-section">
             <h3>EMAIL ADDRESS</h3>
-            <p>origami.entt@gmail.com</p>
+            <a href="mailto:origami.entt@gmail.com"><p>origami.entt@gmail.com</p></a>
           </div>
           <div className="footer-section">
             <h3>PHONE NUMBER</h3>
-            <p>+38344111222</p>
+            <a href="tel:+38344838632"><p>+38344838632</p></a>
           </div>
         </div>
       </div>

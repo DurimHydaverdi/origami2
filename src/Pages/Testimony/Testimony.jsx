@@ -1,9 +1,9 @@
 import React from 'react';
 import './Testimony.scss';
-import jared from '../assets/player_2.jpg'; // Replace with the correct path
-import nathaniel from '../assets/player_3.jpg'; // Replace with the correct path
-import martina from '../assets/player_4.jpg'; // Replace with the correct path
-import chris from '../assets/player_5.jpg'; // Replace with the correct path
+import jared from '../../assets/player_2.jpg'; // Replace with the correct path
+import nathaniel from '../../assets/player_3.jpg'; // Replace with the correct path
+import martina from '../../assets/player_4.jpg'; // Replace with the correct path
+import chris from '../../assets/player_5.jpg'; // Replace with the correct path
 
 const Testimony = () => {
     const testimonies = [

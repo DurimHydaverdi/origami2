@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.scss';
 import trainer from '../../assets/trainer.webp'; // Adjust the path based on your file structure
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -21,9 +21,12 @@ const Contact = () => {
           <div>
             <p>Social</p>
             <div className="social-icons">
-              <FaFacebookF />
-              <FaTwitter />
-              <FaInstagram />
+              <a href="https://www.linkedin.com/in/argjend-zeqiri-ba6756200/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin />
+              </a>
+              <a href="https://www.instagram.com/origamientt" target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+              </a>
             </div>
           </div>
         </div>

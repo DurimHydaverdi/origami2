@@ -19,7 +19,7 @@ import image3 from '../assets/player_6.jpg';
 import image4 from '../assets/player_7.jpg';
 import image5 from '../assets/player_8.jpg';
 import image6 from '../assets/player_9.jpg';
-import Services from '../Pages/Services/Services';
+import Services from '../Services/Services';
 
 const Hero = () => {
     return (

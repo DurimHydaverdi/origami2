@@ -9,6 +9,7 @@
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 2rem;
+        color: #f90;
     }
 
     .offer-cards {
@@ -58,6 +59,98 @@
                 line-height: 1.2;
                 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
             }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .what-we-offer {
+        .offer-title {
+            font-size: 3rem; // Adjust title size further for tiny screens
+        }
+
+        .offer-card {
+            width: 90%; // Ensure cards are full width on small mobile devices
+        }
+
+        .offer-image {
+            height: 200px; // Adjust image size for small screens
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .what-we-offer {
+        .offer-title {
+            font-size: 3rem; // Adjust title size further for tiny screens
+        }
+
+        .offer-card {
+            width: 90%; // Ensure cards are full width on small mobile devices
+        }
+
+        .offer-image {
+            height: 200px; // Adjust image size for small screens
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .what-we-offer {
+        .offer-title {
+            font-size: 3rem; // Adjust title size further for tiny screens
+        }
+
+        .offer-card {
+            width: 90%; // Ensure cards are full width on small mobile devices
+        }
+
+        .offer-image {
+            height: 200px; // Adjust image size for small screens
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .what-we-offer {
+        .offer-title {
+            font-size: 1.4rem; // Adjust title size further for tiny screens
+        }
+
+        .offer-card {
+            width: 90%; // Ensure cards are full width on small mobile devices
+        }
+
+        .offer-image {
+            height: 200px; // Adjust image size for small screens
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .what-we-offer {
+        .offer-title {
+            font-size: 1.3rem; // Even smaller title for compact view
+        }
+
+        .offer-card {
+            width: 90%; // Full-width cards for very small screens
+        }
+
+        .offer-image {
+            height: 180px; // Further reduce image height for ultra-small screens
+        }
+
+        .offer-info {
+            padding: 0.5rem; // Reduce padding even more for very small screens
+        }
+
+        .offer-card-title {
+            font-size: 0.9rem; // Smaller title font
+        }
+
+        .offer-card-text {
+            font-size: 0.7rem; // Smaller text on very small screens
         }
     }
 }

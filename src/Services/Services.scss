@@ -1,0 +1,226 @@
+.services-section {
+  padding: 2rem;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+
+  .services-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #f90;
+  }
+
+  .services-list {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap; // Allow items to wrap on smaller screens
+    width: 100%;
+    max-width: 1200px; // Limit the width to avoid stretching too much on larger screens
+
+    .service-item {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem; // Adds spacing between items in the row
+
+      .service-icon {
+        font-size: 2.5rem;
+        color: white;
+        flex-shrink: 0;
+      }
+
+      .service-content {
+        flex: 1;
+        text-align: left;
+
+        .service-title {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+          color: white;
+        }
+
+        .service-description {
+          font-size: 1rem;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .services-section {
+    .services-title {
+      font-size: 2.2rem; // Slightly smaller title on medium screens
+    }
+
+    .services-list {
+      gap: 3rem; // Reduced gap between service items
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .services-section {
+    .services-title {
+      font-size: 2rem; // Slightly smaller title on tablets
+    }
+
+    .services-list {
+      gap: 2rem; // Further reduce gap between items on tablets
+    }
+
+    .service-item {
+      width: 45%; // Reduce width to 45% on tablets to show two items per row
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  // Center the entire content horizontally
+    justify-content: center; // Center content vertically (if required)
+    padding: 2rem 1rem;
+
+    .services-title {
+      font-size: 1.8rem; // Smaller title for mobile screens
+      margin-bottom: 1.5rem; // Reduce space below title
+      text-align: center; // Ensure the title is centered
+    }
+
+    .services-list {
+      display: flex;
+      flex-direction: column; // Stack the items vertically on mobile
+      gap: 1.5rem; // Add some space between stacked items
+      align-items: center; // Center the items horizontally
+      width: 100%; // Ensure the list takes full width
+    }
+
+    .service-item {
+      width: 90%; // Adjust the width of service items to take most of the available width
+      display: flex;
+      flex-direction: column;
+      align-items: center; // Center content inside each service item
+      justify-content: center; // Center vertically
+      text-align: center; // Center text inside each service item
+      gap: 1rem; // Add space between the icon and text
+    }
+
+    .service-icon {
+      font-size: 3rem; // Increase icon size slightly on smaller screens for better visibility
+      color: white; // Ensure the icon is visible
+    }
+
+    .service-title {
+      font-size: 1.3rem; // Slightly smaller title on smaller screens
+      color: white;
+    }
+
+    .service-description {
+      font-size: 0.9rem; // Smaller description text for mobile devices
+      color: white;
+    }
+  }
+}
+
+
+@media (max-width: 540px) {
+  .services-section {
+    .services-title {
+      font-size: 1.6rem; // Even smaller title on very small screens
+    }
+
+    .service-icon {
+      font-size: 2.5rem; // Adjust icon size for small screens
+    }
+
+    .service-title {
+      font-size: 1.1rem; // Smaller title font size
+    }
+
+    .service-description {
+      font-size: 0.8rem; // Adjust description font size for better readability
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .services-section {
+    .services-title {
+      font-size: 1.5rem; // Further reduce the title size on very small screens
+    }
+
+    .service-item {
+      width: 100%; // Ensure items take full width on very small screens
+    }
+
+    .service-icon {
+      font-size: 2rem; // Smaller icons for very small screens
+    }
+
+    .service-title {
+      font-size: 1rem; // Even smaller title font size
+    }
+
+    .service-description {
+      font-size: 0.75rem; // Make the description text smaller on tiny screens
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .services-section {
+    .services-title {
+      font-size: 1.4rem; // Title for very small screens (phones)
+    }
+
+    .service-item {
+      width: 100%; // Ensure items take up 100% width on ultra-small screens
+    }
+
+    .service-icon {
+      font-size: 1.8rem; // Icon size reduced for tiny screens
+    }
+
+    .service-title {
+      font-size: 0.9rem; // Smaller title on very small screens
+    }
+
+    .service-description {
+      font-size: 0.7rem; // Further reduce description size for tiny screens
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .services-section {
+    .services-title {
+      font-size: 1.4rem; // Title for very small screens (phones)
+    }
+
+    .service-item {
+      width: 100%; // Ensure items take up 100% width on ultra-small screens
+    }
+
+    .service-icon {
+      font-size: 1.8rem; // Icon size reduced for tiny screens
+    }
+
+    .service-title {
+      font-size: 0.9rem; // Smaller title on very small screens
+    }
+
+    .service-description {
+      font-size: 0.7rem; // Further reduce description size for tiny screens
+    }
+  }
+}
+

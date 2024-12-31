@@ -5,7 +5,7 @@ import Achievement from '../Achievement/Achievement';
 import About from '../About/About';
 import Footer from '../../Footer/Footer';
 import Contact from '../Contact/Contact';
-import Testimony from '../../Testimony/Testimony';
+import Testimony from '../Testimony/Testimony';
 
 const ContactAboutUs = () => {
   return (
@@ -15,7 +15,7 @@ const ContactAboutUs = () => {
       {/* <Services /> */}
       <About />
       <Contact />
-      <Testimony />
+      <Testimony/>
       <Footer />
     </div>
   )

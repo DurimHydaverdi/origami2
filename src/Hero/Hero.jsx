@@ -53,11 +53,11 @@ const Hero = () => {
                         <img src={image6} alt="Slide 3" className="hero-slide-image" />
                     </SwiperSlide>
                 </Swiper>
-                <div className="hero-text">
+                {/* <div className="hero-text">
                     <h1 className="hero-title">ORIGAMI ENT</h1>
                     <h2 className="hero-subtitle">Since 2018</h2>
                     <button className="hero-button">VIEW CLIENTS</button>
-                </div>
+                </div> */}
             </header>
             <ClientsLandingPage />
             <DribbleSection />

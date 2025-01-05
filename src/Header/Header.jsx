@@ -40,8 +40,9 @@ function Header() {
       </div>
       <nav className={`header-nav ${isOpen ? 'active' : ''}`}>
         <Link to="/" onClick={handleLinkClick}>Home</Link>
-        <Link to="/clients" onClick={handleLinkClick}>Clients</Link>
+        <Link to="/clients" onClick={handleLinkClick}>News</Link>
         <Link to="/contact-us" onClick={handleLinkClick}>Contact</Link>
+        <Link to="/services-landing-page" onClick={handleLinkClick}>Services</Link>
       </nav>
       {isOpen && <div className="overlay" onClick={() => setIsOpen(false)}></div>}
     </header>

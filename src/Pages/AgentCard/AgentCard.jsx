@@ -5,11 +5,16 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import image2 from '../../assets/player_2.jpg';
-import image3 from '../../assets/player_6.jpg';
-import image4 from '../../assets/player_7.jpg';
-import image5 from '../../assets/player_8.jpg';
-import image6 from '../../assets/player_9.jpg';
+import image1 from '../../assets/about_12.jpg';
+import image2 from '../../assets/about_13.jpg';
+import image3 from '../../assets/about_14.jpg';
+import image4 from '../../assets/about_4.jpg';
+import image5 from '../../assets/about_11.jpg';
+import image6 from '../../assets/about_6.jpg';
+import image7 from '../../assets/about_7.jpg';
+import image8 from '../../assets/about_8.jpg';
+import image9 from '../../assets/about_9.jpg';
+
 
 const AgentCard = () => {
     return (
@@ -23,10 +28,9 @@ const AgentCard = () => {
                                 loop={true}
                                 className="hero-slider"
                             >
-                                {/* <SwiperSlide>
+                                <SwiperSlide>
                                     <img src={image1} alt="Slide 1" className="hero-slide-image" />
                                 </SwiperSlide>
-                                */}
                                 <SwiperSlide>
                                     <img src={image2} alt="Slide 2" className="hero-slide-image" />
                                 </SwiperSlide>

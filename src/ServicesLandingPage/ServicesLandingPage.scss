@@ -1,0 +1,55 @@
+.serviceslp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #121212;
+    margin-top: 120px;
+    min-height: 100vh; // Ensure the entire container fills the viewport height
+  }
+  
+  .serviceslp-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem; // Adds space between the cards
+    flex-grow: 1; // Makes the content area take up all available space
+  }
+  
+  .serviceslp-card {
+    background-color: #000;
+    color: #fff;
+    flex: 1 1 calc(33.333% - 1rem); // Ensures three cards per row with space between
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f90;
+  
+    h3 {
+      color: #f90;
+    //   margin-bottom: 1rem;
+      font-size: 3rem;
+    }
+  
+    p {
+      font-size: 1.5rem;
+      line-height: 1.6;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .serviceslp-card {
+      width: 100%;
+      h3 {
+        color: #f90;
+        font-size: 1.5rem;
+      }
+    
+      p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+    }
+  }
+  

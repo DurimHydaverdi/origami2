@@ -25,7 +25,9 @@ const Footer = () => {
           </div>
           <div className="footer-section">
             <h3>PHONE NUMBER</h3>
-            <a href="tel:+38344838632"><p>+38344838632</p></a>
+            <a href="https://wa.me/38344838632" target="_blank" rel="noopener noreferrer">
+              <p>+38344838632</p>
+            </a>
           </div>
         </div>
       </div>

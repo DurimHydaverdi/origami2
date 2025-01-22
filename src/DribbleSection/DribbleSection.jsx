@@ -10,12 +10,12 @@ const DribbleSection = () => {
             </div>
             <div className="dribble-content">
                 <div className="dribble-text-box">
-                    <h1 className="dribble-title">REPAIRING IS CARING</h1>
+                    <h1 className="dribble-title">THE ORIGAMI STORY</h1>
                     <p className="dribble-text">
-                        Miles' Garage actually does belong to Miles - a cheerful guy with an almost crazy obsession with cars. He and his team of specialists have learned to translate this obsessive nature into impressive service, repairing automobiles with such finesse, it's almost an art form.
+                    Origami Sports & Entertainment is a full-service management firm specializing in talent development within the sports and arts industries, with a focus on basketball. With 6 years of experience in the European-American basketball sector, we have achieved exceptional success, having participated in over 150 finalized global contracts spanning 4 continents.
                     </p>
                     <p className="dribble-text">
-                        Miles and the rest of his garage is committed to caring for cars with top-notch service and repairs, because the longer a car lasts, the better for you, for the environment, and for your beloved automobile.
+                    Our portfolio includes partnerships with prominent basketball leagues such as the EuroCup, BSL Turkey, ABA League, FIBA Europe Cup, and G-League, among others.
                     </p>
                 </div>
             </div>

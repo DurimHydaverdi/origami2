@@ -1,6 +1,6 @@
 import React from 'react';
 import './Achievement.scss';
-import achivement from '../../assets/achivement.webp'
+import achivement from '../../assets/about_2.jpg'
 
 const Achievement = () => {
   return (

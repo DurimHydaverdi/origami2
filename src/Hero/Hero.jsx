@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import DribbleSection from '../DribbleSection/DribbleSection';
 import WhatWeOffer from '../WhatWeOffer/WhatWeOffer';
 // import Testimony from '../Testimony/Testimony';
-import ClientsLandingPage from '../ClientsLandingPage/ClientsLandingPage';
+// import ClientsLandingPage from '../ClientsLandingPage/ClientsLandingPage';
 import Footer from '../Footer/Footer';
 
 // import image1 from '../assets/player_1.webp';
@@ -59,7 +59,7 @@ const Hero = () => {
                     <button className="hero-button">VIEW CLIENTS</button>
                 </div> */}
             </header>
-            <ClientsLandingPage />
+            {/* <ClientsLandingPage /> */}
             <DribbleSection />
             <WhatWeOffer />
             {/* <Testimony /> */}

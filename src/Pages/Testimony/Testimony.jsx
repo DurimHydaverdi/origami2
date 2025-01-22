@@ -31,7 +31,7 @@ const Testimony = () => {
 
     return (
         <div className="testimony">
-            <h1 className="testimony-title">TESTIMONY</h1>
+            <h1 className="testimony-title">TESTIMONIALS</h1>
             <div className="testimony-grid">
                 {testimonies.map((testimony, index) => (
                     <div className="testimony-card" key={index}>

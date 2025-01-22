@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 // import video from '../assets/highlight.mp4'
 // import video1 from '../assets/highlight_1.mp4'
 import DribbleSection from '../DribbleSection/DribbleSection';
-import WhatWeOffer from '../WhatWeOffer/WhatWeOffer';
+// import WhatWeOffer from '../WhatWeOffer/WhatWeOffer';
 // import Testimony from '../Testimony/Testimony';
 // import ClientsLandingPage from '../ClientsLandingPage/ClientsLandingPage';
 import Footer from '../Footer/Footer';
@@ -61,7 +61,7 @@ const Hero = () => {
             </header>
             {/* <ClientsLandingPage /> */}
             <DribbleSection />
-            <WhatWeOffer />
+            {/* <WhatWeOffer /> */}
             {/* <Testimony /> */}
             <Services />
             <Footer />

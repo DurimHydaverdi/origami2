@@ -14,7 +14,7 @@ import DribbleSection from '../DribbleSection/DribbleSection';
 import Footer from '../Footer/Footer';
 
 // import image1 from '../assets/player_1.webp';
-import image2 from '../assets/player_2.jpg';
+// import image2 from '../assets/player_2.jpg';
 import image3 from '../assets/player_6.jpg';
 import image4 from '../assets/player_7.jpg';
 import image5 from '../assets/player_8.jpg';
@@ -40,9 +40,9 @@ const Hero = () => {
                         <img src={image1} alt="Slide 1" className="hero-slide-image" />
                     </SwiperSlide>
                     */}
-                    <SwiperSlide>
+                    {/* <SwiperSlide>
                         <img src={image2} alt="Slide 2" className="hero-slide-image" />
-                    </SwiperSlide>
+                    </SwiperSlide> */}
                     <SwiperSlide>
                         <img src={image3} alt="Slide 3" className="hero-slide-image" />
                     </SwiperSlide>

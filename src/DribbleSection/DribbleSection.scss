@@ -10,8 +10,7 @@
     .dribble-image {
         flex: 1;
         img {
-            width: 100%;
-            max-width: 528px; // Max width to prevent image from growing too large
+            width: 90%;
             height: auto;
             border-radius: 10px;
             object-fit: cover;

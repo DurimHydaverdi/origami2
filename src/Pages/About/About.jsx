@@ -1,12 +1,12 @@
 import React from 'react';
 import './About.scss';
-import basketBall from '../../assets/basket-ball.webp'; // Adjust path based on your file structure
+import about_us from '../../assets/about-us-p.jpg'; // Adjust path based on your file structure
 
 const About = () => {
   return (
     <section className="about">
       <div className="about-image">
-        <img src={basketBall} alt="Basketball" />
+        <img src={about_us} alt="Basketball" />
       </div>
       <div className="about-content">
         <h2>ABOUT</h2>

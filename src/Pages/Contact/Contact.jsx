@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.scss';
-import trainer from '../../assets/trainer.webp'; // Adjust the path based on your file structure
+import work_together from '../../assets/lets-work-together.jpg'; // Adjust the path based on your file structure
 import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const Contact = () => {
@@ -34,7 +34,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="contact-image">
-        <img src={trainer} alt="Trainer with team" />
+        <img src={work_together} alt="Trainer with team" />
       </div>
     </section>
   );

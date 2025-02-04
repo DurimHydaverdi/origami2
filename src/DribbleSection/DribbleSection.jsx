@@ -1,12 +1,12 @@
 import React from 'react';
 import './DribbleSection.scss';
-import dribble from '../assets/dribble.jpg'; // Update with the correct path
+import our_story from '../assets/about_11.jpg'; // Update with the correct path
 
 const DribbleSection = () => {
     return (
         <div className="dribble-section">
             <div className="dribble-image">
-                <img src={dribble} alt="Basketball" />
+                <img src={our_story} alt="Basketball" />
             </div>
             <div className="dribble-content">
                 <div className="dribble-text-box">

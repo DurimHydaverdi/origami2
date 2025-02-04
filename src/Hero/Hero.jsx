@@ -19,6 +19,9 @@ import image3 from '../assets/player_6.jpg';
 import image4 from '../assets/player_7.jpg';
 import image5 from '../assets/player_8.jpg';
 import image6 from '../assets/player_9.jpg';
+import image7 from '../assets/player_77.jpg';
+import image8 from '../assets/player_88.jpg';
+import image9 from '../assets/player_99.jpg';
 import Services from '../Services/Services';
 
 const Hero = () => {
@@ -44,13 +47,22 @@ const Hero = () => {
                         <img src={image3} alt="Slide 3" className="hero-slide-image" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={image4} alt="Slide 3" className="hero-slide-image" />
+                        <img src={image4} alt="Slide 4" className="hero-slide-image" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={image5} alt="Slide 3" className="hero-slide-image" />
+                        <img src={image5} alt="Slide 5" className="hero-slide-image" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={image6} alt="Slide 3" className="hero-slide-image" />
+                        <img src={image6} alt="Slide 6" className="hero-slide-image" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={image7} alt="Slide 7" className="hero-slide-image" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={image8} alt="Slide 8" className="hero-slide-image" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={image9} alt="Slide 9" className="hero-slide-image" />
                     </SwiperSlide>
                 </Swiper>
                 {/* <div className="hero-text">

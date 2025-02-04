@@ -5,7 +5,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import image1 from '../../assets/about_12.jpg';
+// import image1 from '../../assets/about_12.jpg';
 import image2 from '../../assets/about_13.jpg';
 import image3 from '../../assets/about_14.jpg';
 import image4 from '../../assets/about_4.jpg';
@@ -28,14 +28,14 @@ const AgentCard = () => {
                                 loop={true}
                                 className="hero-slider"
                             >
-                                <SwiperSlide>
+                                {/* <SwiperSlide>
                                     <img src={image1} alt="Slide 1" className="hero-slide-image" />
+                                </SwiperSlide> */}
+                                <SwiperSlide>
+                                    <img src={image3} alt="Slide 3" className="hero-slide-image" />
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <img src={image2} alt="Slide 2" className="hero-slide-image" />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src={image3} alt="Slide 3" className="hero-slide-image" />
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <img src={image4} alt="Slide 3" className="hero-slide-image" />

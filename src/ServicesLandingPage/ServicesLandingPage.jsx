@@ -25,6 +25,9 @@ const ServicesLandingPage = () => {
   return (
     <div>
     <div className="serviceslp">
+        <div className="clients-header">
+          <h2>Services</h2>
+        </div>
         <div className="serviceslp-content">
             {testimonialsData.map((testimonial, index) => (
             <div className="serviceslp-card" key={index}>

@@ -11,9 +11,9 @@ import image3 from '../../assets/about_14.jpg';
 import image4 from '../../assets/about_4.jpg';
 import image5 from '../../assets/about_11.jpg';
 import image6 from '../../assets/about_6.jpg';
-import image7 from '../../assets/about_7.jpg';
-import image8 from '../../assets/about_8.jpg';
-import image9 from '../../assets/about_9.jpg';
+// import image7 from '../../assets/about_7.jpg';
+// import image8 from '../../assets/about_8.jpg';
+// import image9 from '../../assets/about_9.jpg';
 
 
 const AgentCard = () => {
